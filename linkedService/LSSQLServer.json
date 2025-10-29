@@ -1,0 +1,16 @@
+{
+	"name": "LSSQLServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=LAPTOP-C252H5N8,1433;initial catalog=master;user id=adf_user;encrypt=True;trustservercertificate=True",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmZTQyMjM0Mi01NTZhLTRkMTYtYWIzZC01MTA3NWFhZWFiNDMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-selfhost",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

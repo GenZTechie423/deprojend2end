@@ -1,0 +1,13 @@
+{
+	"name": "DSSQLTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LSSQLServer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
