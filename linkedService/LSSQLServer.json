@@ -5,8 +5,8 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "integrated security=False;data source=LAPTOP-C252H5N8,1433;initial catalog=master;user id=adf_user;encrypt=True;trustservercertificate=True",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmZTQyMjM0Mi01NTZhLTRkMTYtYWIzZC01MTA3NWFhZWFiNDMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"connectionString": "integrated security=False;data source=LAPTOP-C252H5N8,1433;initial catalog=SAMPLEDB;user id=adf_user;encrypt=True;trustservercertificate=True",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI3ODYwYjc1OC03NzM4LTQ3MzAtYjQ3YS1kMzM3YWE0MzlmYzgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "IR-selfhost",
