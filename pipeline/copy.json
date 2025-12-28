@@ -132,7 +132,7 @@
 														"type": "Expression"
 													},
 													"folder": {
-														"value": "@item().target_container",
+														"value": "@item().target_sub_path",
 														"type": "Expression"
 													},
 													"file": {
