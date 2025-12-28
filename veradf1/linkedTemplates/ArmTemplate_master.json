@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "veradf1"
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+		},
 		"LSSQLServer_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LSSQLServer'"
@@ -41,6 +45,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
 					},
 					"LSVerADF_connectionString": {
 						"value": "[parameters('LSVerADF_connectionString')]"

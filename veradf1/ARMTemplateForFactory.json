@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "veradf1"
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+		},
 		"LSSQLServer_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LSSQLServer'"
@@ -156,7 +160,7 @@
 																"type": "Expression"
 															},
 															"folder": {
-																"value": "@item().target_container",
+																"value": "@item().target_sub_path",
 																"type": "Expression"
 															},
 															"file": {
@@ -1237,6 +1241,23 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/LSVerADF')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureDatabricks1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureDatabricks",
+				"typeProperties": {
+					"domain": "https://adb-4295002006439190.10.azuredatabricks.net",
+					"accessToken": {
+						"type": "SecureString",
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					}
+				}
+			},
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/LSSQLServer')]",

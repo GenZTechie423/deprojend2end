@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "veradf1"
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
 		"LSSQLServer_connectionString": {
 			"value": ""
 		},
